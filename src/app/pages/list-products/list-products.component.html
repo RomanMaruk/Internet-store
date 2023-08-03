@@ -1,4 +1,6 @@
 <div class="wrap">
+  <app-header></app-header>
+
   <div class="wrap__products">
     <ng-container *ngIf="products$ | async as products; else loading">
       <app-card-product
