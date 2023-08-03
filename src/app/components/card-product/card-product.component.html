@@ -1,1 +1,16 @@
-<p>card-product works!</p>
+<div class="card">
+  <div class="card__img">
+    <img [src]="product.images[0]" alt="product" />
+  </div>
+
+  <div class="card__price">
+    <span class="card__price-rating">{{ product.rating }}</span>
+    <span class="card__price-price">{{
+      product.price | currency : "UA" : "code"
+    }}</span>
+  </div>
+  <h1 class="card__title">{{ product.title }}</h1>
+  <p class="card__type">{{ product.category }}</p>
+
+  <button class="btn">Add to card</button>
+</div>

@@ -1,0 +1,24 @@
+@use "/src/variables.scss" as st;
+
+.btn {
+  position: relative;
+  font-weight: 600;
+  color: st.$customBlack;
+  font-family: st.$fontFamily;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 100px;
+  transition: all 100ms linear;
+  border: 1px solid st.$blue;
+  background-color: st.$blue;
+  color: st.$white;
+  &:hover {
+    background-color: st.$white;
+    color: st.$blue;
+  }
+  &:active {
+    cursor: grabbing;
+  }
+}
