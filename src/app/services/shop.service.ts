@@ -1,15 +1,26 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { IProduct } from '../models/product.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ShopService {
+  private productsToBuy = new BehaviorSubject<IProduct[]>([]);
+  public productsToBuy$ = this.productsToBuy.asObservable();
+
   constructor() {}
 
   getAllProducts(): Observable<IProduct[]> {
     return of(PRODUCTS);
+  }
+
+  set setProductsToBuy(product: IProduct) {
+    const products = this.productsToBuy.getValue();
+    const isExist = products.some((p) => p.id === product.id);
+    if (isExist) return;
+    products.push(product);
+    this.productsToBuy.next(products);
   }
 }
 

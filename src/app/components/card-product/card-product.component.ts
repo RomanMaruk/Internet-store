@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IProduct } from 'src/app/models/product.model';
+import { ShopService } from 'src/app/services/shop.service';
 
 @Component({
   selector: 'app-card-product[product]',
@@ -8,4 +9,10 @@ import { IProduct } from 'src/app/models/product.model';
 })
 export class CardProductComponent {
   @Input() product!: IProduct;
+
+  constructor(private shop: ShopService) {}
+
+  addProduct(product: IProduct) {
+    this.shop.setProductsToBuy = product;
+  }
 }
