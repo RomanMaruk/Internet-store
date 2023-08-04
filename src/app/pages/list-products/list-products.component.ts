@@ -11,5 +11,7 @@ import { ShopService } from 'src/app/services/shop.service';
 export class ListProductsComponent {
   constructor(private shopService: ShopService) {}
 
+  public search = '';
+
   public products$: Observable<IProduct[]> = this.shopService.getAllProducts();
 }

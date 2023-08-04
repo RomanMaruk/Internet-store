@@ -32,7 +32,7 @@ export class ShopService {
 
 const PRODUCTS = [
   {
-    id: '76w0hz7015kkr9kjkav',
+    id: '76w0hz7015kkr9kjka3v',
     images: [
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg',
       'https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg',
@@ -44,7 +44,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'qeagrlm9lrkr9kjkav',
+    id: 'qeagrlm9lrk3r9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/178060622.jpg',
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060625.jpg',
@@ -56,7 +56,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: '0y9ksratv6akr9kjkav',
+    id: '0y93ksratv6akr9kjkav',
     images: [
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/178060662.jpg',
@@ -68,7 +68,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'cvr29caokhhkr9kjkav',
+    id: 'cvr29ca4okhhkr9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101152.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101161.jpg',
@@ -81,7 +81,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'k9hb29sfeekr9kjkav',
+    id: 'k9hb29sfe5ekr9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101161.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/24790127.jpg',
@@ -93,7 +93,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: '76w0hz7015kkr9kjkav',
+    id: '76w0hz70154kkr9kjkav',
     images: [
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg',
       'https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg',
@@ -105,7 +105,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'qeagrlm9lrkr9kjkav',
+    id: 'qeagrlm39lrkr9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/178060622.jpg',
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060625.jpg',
@@ -117,7 +117,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: '0y9ksratv6akr9kjkav',
+    id: '0y9ksrat6v6akr9kjkav',
     images: [
       'https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/178060662.jpg',
@@ -129,7 +129,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'cvr29caokhhkr9kjkav',
+    id: 'cvr29caok3hhkr9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101152.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101161.jpg',
@@ -142,7 +142,7 @@ const PRODUCTS = [
     brand: 'acer',
   },
   {
-    id: 'k9hb29sfeekr9kjkav',
+    id: 'k9hb29s3feekr9kjkav',
     images: [
       'https://content1.rozetka.com.ua/goods/images/big_tile/25101161.jpg',
       'https://content1.rozetka.com.ua/goods/images/big_tile/24790127.jpg',

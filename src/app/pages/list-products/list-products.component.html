@@ -1,8 +1,9 @@
 <div class="wrap">
+  <app-search-input (emitName)="search = $event"></app-search-input>
   <div class="wrap__products">
     <ng-container *ngIf="products$ | async as products; else loading">
       <app-card-product
-        *ngFor="let product of products"
+        *ngFor="let product of products | search : search"
         [product]="product"
       ></app-card-product>
     </ng-container>
