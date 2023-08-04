@@ -22,3 +22,12 @@
     cursor: grabbing;
   }
 }
+
+.btn.white {
+  background-color: st.$green;
+  color: st.$blue;
+  &:hover {
+    background-color: st.$redLight;
+    color: st.$white;
+  }
+}

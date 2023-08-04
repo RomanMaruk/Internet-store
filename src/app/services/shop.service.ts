@@ -22,6 +22,12 @@ export class ShopService {
     products.push(product);
     this.productsToBuy.next(products);
   }
+
+  removeProductFromBuy(idProduct: string) {
+    const products = this.productsToBuy.getValue();
+    const filteredProducts = products.filter((p) => p.id !== idProduct);
+    this.productsToBuy.next(filteredProducts);
+  }
 }
 
 const PRODUCTS = [

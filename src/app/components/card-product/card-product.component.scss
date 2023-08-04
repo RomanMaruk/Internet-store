@@ -28,7 +28,10 @@
       background-color: st.$blue;
       padding: 4px 12px;
       font-size: 12px;
+      display: flex;
+      align-items: center;
       border-radius: 12px;
+      gap: 4px;
     }
   }
 

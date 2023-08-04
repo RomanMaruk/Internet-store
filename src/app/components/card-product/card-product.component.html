@@ -4,7 +4,10 @@
   </div>
 
   <div class="card__price">
-    <span class="card__price-rating">{{ product.rating }}</span>
+    <span class="card__price-rating">
+      <img src="../../../assets/images/star.png" alt="star" />
+      {{ product.rating }}</span
+    >
     <span class="card__price-price">{{
       product.price | currency : "UA" : "code"
     }}</span>
@@ -12,5 +15,14 @@
   <h1 class="card__title">{{ product.title }}</h1>
   <p class="card__type">{{ product.category }}</p>
 
-  <button class="btn" (click)="addProduct(product)">Add to card</button>
+  <button
+    class="btn white"
+    *ngIf="isToBuy(product.id) | async; else add"
+    (click)="remove(product.id)"
+  >
+    Remove
+  </button>
+  <ng-template #add>
+    <button class="btn" (click)="addProduct(product)">Add to card</button>
+  </ng-template>
 </div>
