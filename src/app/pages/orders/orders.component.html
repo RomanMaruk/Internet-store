@@ -1,0 +1,32 @@
+<div class="wrap">
+  <ng-container *ngIf="products$ | async as products">
+    <ng-container *ngIf="products.length; else noProduct">
+      <p class="wrap__total" *ngIf="totalPrice$ | async as total">
+        Your sum is:
+        <span class="wrap__total-price">
+          {{ total | currency : "UA" }}
+        </span>
+      </p>
+      <div class="wrap__products">
+        <app-card-product
+          *ngFor="let p of products"
+          [product]="p"
+        ></app-card-product>
+      </div>
+
+      <div class="wrap__btn">
+        <a routerLink="" class="btn">Continue buing</a>
+        <button class="btn">Order</button>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #noProduct>
+    <div class="wrap__empty">
+      <div class="wrap__empty-img">
+        <img src="../../../assets/images/order-empty.svg" alt="empty" />
+      </div>
+      <p class="wrap__empty-text">Your basket is empty!!!</p>
+    </div>
+  </ng-template>
+</div>

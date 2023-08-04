@@ -1,0 +1,39 @@
+@use "/src/variables.scss" as st;
+@use "/src/app/styles/button.scss";
+
+.wrap__products {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.wrap__total {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  &-price {
+    font-weight: st.$bold;
+  }
+}
+
+.wrap__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.wrap__empty {
+  &-img {
+    height: 240px;
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  &-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: st.$bold;
+  }
+}
